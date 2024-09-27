@@ -130,6 +130,19 @@ nav .menu-desktop .menu-logo-container-mobile {
     line-height: 1.5;
 }
 
+.left-container-title {
+    font-size: 1.8rem;
+    line-height: normal;
+    font-family: Barlow, sans-serif;
+}
+
+.left-container-text {
+    color: rgb(115, 115, 115);
+    font-family: Heebo, sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
 .left-container__main-btn {
     margin-top: 10px;
     border: 0px;

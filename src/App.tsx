@@ -112,8 +112,10 @@ function App() {
                                     </span>
                                 </span>
                             </div>
-                            <h1> Skilled e-learning</h1>
-                            <p>
+                            <h1 className="left-container-title">
+                                Skilled e-learning
+                            </h1>
+                            <p className="left-container-text">
                                 This responsive page is perfect if you've
                                 learned the fundamentals of HTML & CSS,
                                 completed a couple of smaller projects, and want
