@@ -12,7 +12,7 @@ function App() {
     return (
         <>
             {/* Header */}
-            <nav>
+            <nav className="nav-main-main">
                 <div className="menu-desktop">
                     <div className="menu-logo-container-desktop">
                         <img
@@ -119,7 +119,9 @@ function App() {
                                 completed a couple of smaller projects, and want
                                 to take it up a notch.
                             </p>
-                            <button>Start challenge</button>
+                            <button className="left-container__main-btn">
+                                Start challenge
+                            </button>
                         </div>
                         <div className="right-container">
                             <img

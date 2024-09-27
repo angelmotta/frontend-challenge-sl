@@ -12,6 +12,10 @@ nav .menu-desktop {
     padding: 0 20px;
 }
 
+.nav-main-main {
+    padding: 20px 0;
+}
+
 .logo-image-desktop {
     width: 196px;
     height: 28px;
@@ -88,6 +92,7 @@ nav .menu-desktop .menu-logo-container-mobile {
     margin-left: 60px;
     margin-right: 60px;
     padding: 2.5rem;
+    gap: 2rem;
 }
 
 .left-container__icons {
@@ -95,9 +100,87 @@ nav .menu-desktop .menu-logo-container-mobile {
     justify-content: space-between;
 }
 
+.left-container__right {
+    border: 1px solid rgb(106, 190, 205);
+    border-radius: 0.5rem;
+    display: inline-flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.left-container__right-1 {
+    background-color: rgb(106, 190, 205);
+    color: rgb(255, 255, 255);
+    border: 0;
+    font-family: Barlow, sans-serif;
+    font-size: 1rem;
+    padding: 0rem 0.75rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.left-container__right-2 {
+    background-color: transparent;
+    color: rgb(106, 190, 205);
+    border: 0;
+    font-family: Barlow, sans-serif;
+    font-size: 1rem;
+    padding: 0rem 0.75rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.left-container__main-btn {
+    margin-top: 10px;
+    border: 0px;
+    border-radius: 10rem;
+    background-color: rgb(237, 44, 73);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: inline-flex;
+    flex-shrink: 0;
+    font-family: Barlow, sans-serif;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 700;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+}
+
 img.right-container__preview-img {
     max-width: 100%;
     height: auto;
+    margin-bottom: 10px;
+}
+
+.right-container_btns {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+}
+
+.right-container_btn__primary {
+    background-color: rgb(62, 84, 163);
+    color: white;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    font-family: Barlow, sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 2rem;
+}
+
+.right-container_btn__secondary {
+    background-color: rgb(219, 229, 230);
+    color: rgb(115, 115, 115);
+    border: none;
+    padding: 0.4rem 0.8rem;
+    font-family: Barlow, sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 2rem;
 }
 
 .left-container__left-tags {
@@ -284,6 +367,10 @@ img.right-container__preview-img {
     /* full menu disable */
     nav .menu-desktop .menu-options {
         display: none;
+    }
+
+    .content-card {
+        flex-direction: column-reverse;
     }
 }
 
