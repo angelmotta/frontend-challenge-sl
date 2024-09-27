@@ -1,6 +1,14 @@
+import { useState } from "react";
 import "./App.css";
 
 function App() {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        console.log(`toggleMenu clicked`);
+        setIsMenuOpen(!isMenuOpen);
+    };
+
     return (
         <>
             {/* Header */}
@@ -33,6 +41,49 @@ function App() {
                             LOG IN WITH GITHUB
                         </a>
                     </div>
+
+                    <div
+                        className="burger-icon"
+                        id="burger-icon"
+                        onClick={toggleMenu}
+                    >
+                        <div
+                            className={`burger-icon-line ${
+                                isMenuOpen ? "open" : ""
+                            }`}
+                        ></div>
+                        <div
+                            className={`burger-icon-line ${
+                                isMenuOpen ? "open" : ""
+                            }`}
+                        ></div>
+                        <div
+                            className={`burger-icon-line ${
+                                isMenuOpen ? "open" : ""
+                            }`}
+                        ></div>
+                    </div>
+                </div>
+                <div
+                    className={`menu-options-mobile ${
+                        isMenuOpen ? "open" : ""
+                    }`}
+                >
+                    <a href="#" className="menu-options-item">
+                        LEARNING PATHS
+                    </a>
+                    <a href="#" className="menu-options-item">
+                        CHALLENGES
+                    </a>
+                    <a href="#" className="menu-options-item">
+                        ARTICLES
+                    </a>
+                    <a href="#" className="menu-options-item">
+                        UNLOCK PRO
+                    </a>
+                    <a href="#" className="menu-options-item">
+                        LOG IN WITH GITHUB
+                    </a>
                 </div>
             </nav>
             {/* Main content */}
